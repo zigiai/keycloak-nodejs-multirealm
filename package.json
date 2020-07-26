@@ -36,8 +36,7 @@
   "devDependencies": {
     "eslint": "^4.16.0",
     "eslint-config-devsu": "^0.0.3",
-    "jest": "^22.1.4",
-    "keycloak-connect": "^3.4.3"
+    "jest": "^22.1.4"
   },
   "coverageThreshold": {
     "global": {
@@ -54,11 +53,10 @@
   "dependencies": {
     "composable-middleware": "^0.3.0",
     "jsonwebtoken": "^8.1.1",
+    "keycloak-connect": "^11.0.0",
     "node-cache": "^4.1.1"
   },
-  "peerDependencies": {
-    "keycloak-connect": "3.x"
-  },
+  "peerDependencies": {},
   "jest": {
     "testEnvironment": "node"
   }
