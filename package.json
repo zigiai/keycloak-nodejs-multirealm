@@ -9,7 +9,9 @@
     "lint-fix": "eslint --fix .",
     "posttest": "yarn run lint",
     "coverage": "jest --coverage && npm run posttest",
-    "prepush": "yarn run coverage"
+    "prepush": "yarn run coverage",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -54,10 +56,12 @@
     "composable-middleware": "^0.3.0",
     "jsonwebtoken": "^8.1.1",
     "keycloak-connect": "^11.0.0",
-    "node-cache": "^4.1.1"
+    "node-cache": "^4.1.1",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {},
   "jest": {
     "testEnvironment": "node"
-  }
+  },
+  "snyk": true
 }
